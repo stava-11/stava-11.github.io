@@ -1,13 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
     display: block;
 }
 
 header {
     padding: 1rem 0;
-    max-width: 950px;
+    max-width: 1000px;
     position: relative;
 }
 
