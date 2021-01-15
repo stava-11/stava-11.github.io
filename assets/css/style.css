@@ -1,19 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 10px auto;
     display: block;
 }
 
 header {
     padding: 1rem 0;
-    max-width: 1000px;
     position: relative;
+    border-radius: 15px 15px 0 0;
 }
 
 header, footer {
     background-color: rgb(36, 102, 35);
-    border-radius: 15px;
     color: white;
 
 }
@@ -33,25 +32,33 @@ header img {
     overflow: hidden; 
 }
 
-section h2 {
+main {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 10px 0 25px;
+}
+
+main h2 {
     margin-left: 15px;
 }
 
-section h2:after {
+main h2:after {
     content: "";
     display: block;  
-    width: 77%;
+    width: 42rem;
     padding-top: 10px;
     border-bottom: 1px solid rgb(163, 161, 161);
 }
 
-section ul {
+main ul {
     margin-left: 15px;
+    margin-bottom: 0px;
 }
 
 footer {
     text-align: center;
     padding: 0.5rem 0;
+    border-radius: 0 0 15px 15px;
 }
 
 footer a {
@@ -59,6 +66,9 @@ footer a {
 }
 
 @media screen and (max-width: 700px) { 
+    body {
+        margin: 0;
+    }
     header {
         text-align: center;
         padding-top: 10px;
@@ -75,22 +85,23 @@ footer a {
         border-radius: 15px;
     }
 
-    section {
+    main {
         text-align: center;
+        border: 0;
     }
 
-    section h2 {
+    main h2 {
         margin: 20px 0 5px;
     }
     
-    section h2:after {
+    main h2:after {
         width: 100%;
     }
 
-    section ul {
+    main ul {
         display: inline-block;
         text-align: left;
-        margin: 15px 0 20px;
+        margin: 20px 0 5px -10px;
     }
 
     footer {
