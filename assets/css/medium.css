@@ -1,0 +1,6 @@
+@media (min-width: 32.5em) { 
+    header img {
+        position: unset;
+        border-radius: 15px;
+    }
+}
