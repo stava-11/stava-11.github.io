@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="WDD 230: Web Frontend Development Preston Idaho Page">
+    <meta name="author" content="John Stavast">
+    <title>Preston Idaho</title>
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+<!-- HEADER HERE -->
+	<header>
+        <section class="contentWidth">
+            <img src="images/logoSmall.jpg" alt="Windy Idaho Weather Logo" class="smallLogo">
+            <img src="images/logoLarge.jpg" alt="Windy Idaho Weather Logo" class="largeLogo">
+            <h1>Windy Idaho Weather</h1>
+            <p>Where weather news blows on in!</p>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <section class="">
+            <ul id="menuOptions" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>    
+                <li><a href="#">Storm Center</a></li>  
+                <li><a href="#">Gallery</a></li>  
+            </ul>
+        </section>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Preston Idaho</h1>
+        <section class="placeholder"><p>Hero Image / Weather Summary</p></section>
+        <section class="placeholder"><p></p>5 day forecast</p></section>
+        <section class="placeholder"><p></p>Article</p></section>
+        <section class="placeholder"><p></p>Contact Information</p></section>
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p id='date'> </p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+</div>
+</body>
+</html>
