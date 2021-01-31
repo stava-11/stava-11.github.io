@@ -107,12 +107,11 @@ main h1 {
     margin: 0;
 }
 
-main .placeholder {
+.placeholder {
     background-color: #F2F6F6;
     border: .1rem solid #354452;
     margin: 1rem;
     padding-left: 1rem;
-
 }
 
 footer {

@@ -51,13 +51,5 @@
         padding: .8rem 1rem;
     }
 
-    main .prestonHeroSmall {
-        display: none;
-    }
-    
-    main .prestonHero {
-        display: grid;
-        max-width: 100%;
-        height: auto;
-    }
+  
 } /*end medium */
