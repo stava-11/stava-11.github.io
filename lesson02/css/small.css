@@ -1,25 +1,9 @@
-@media (max-width: 612px) { 
 
 main {
-    display: block;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    justify-items: center;
 }
 
-.section_1 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.section_2 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.section_3 {
-    grid-column: 1;
-    grid-row: 3;
-}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -34,7 +18,7 @@ header {
 }
 
 header h1 {
-    font-size: 45px;
+    font-size: 3rem;
     margin: 0;
     padding: 10px 0;
     text-align: center;
@@ -43,9 +27,8 @@ header h1 {
 section {
     max-width: 320px;
     height: auto;
-    margin: 15px auto;
+    margin: 15px;
     background-color: rgb(245, 245, 241);
-    border-radius: 8px;
     border-radius: 10px;
     border: 1px solid grey;
 }
@@ -95,6 +78,4 @@ footer {
 
 footer a {
     color: white;
-}
-
 }
