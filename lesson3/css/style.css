@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-    background-color: #354452;
+    background-color: #4567DB;
 	text-align: center;
 }
 
@@ -40,8 +40,7 @@ nav ul li a {
 }
 
 nav a:hover {
-	background-color: #B6CADD;
-	color: #36454f;
+	background-color: rgba(0,0,0,0.4);
 }
 
 .demographics, .colorSchemeContent {
