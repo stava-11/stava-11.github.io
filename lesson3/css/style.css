@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-    background-color: #B6CADD;
+    background-color: #354452;
 	text-align: center;
 }
 
@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav a:hover {
-	background-color: #bbb;
+	background-color: #B6CADD;
 	color: #36454f;
 }
 
