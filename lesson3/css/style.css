@@ -3,8 +3,19 @@
 
 body {
     max-width: 1000px;
-	font-family: 'Roboto', sans-serif;
 	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Raleway', 'Montserrat', sans-serif;
+}
+
+header {
+	margin: 1rem;
 }
 
 nav {
@@ -33,6 +44,114 @@ nav a:hover {
 	color: #36454f;
 }
 
+.demographics, .colorSchemeContent {
+	display: block;
+	margin: 0 auto;
+	max-width:fit-content;
+}
+
+.demographics section {
+	background-color: #f2f6f6;
+	width: 100%;
+	padding: 1rem;
+}
+
+section {
+	margin: 1rem;
+}
+
+.scenarios section {
+	margin: 1rem 1rem;
+	padding: 1rem;
+	background-color: #f2f6f6;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-size: .8rem;
+}
+
+.headerSection, .pageTitle, .footerSection {
+	border: 1px solid #354452;
+	max-width: 100%;
+	padding: 1rem;
+}
+
+.headerSection p {
+	color: black;
+	max-width: 200px;
+	padding: .5rem;
+}
+
+.headerSection p:nth-of-type(1) {
+	background-color: #F2F6F6;
+}
+
+.headerSection p:nth-of-type(2) {
+	background-color: #F2AF58;
+}
+
+.headerSection p:nth-of-type(3) {
+	background-color: #354452;
+	color: white;
+}
+
+.headerSection p:nth-of-type(4) {
+	background-color: #B6CADD;
+}
+
+.headerSection p:nth-of-type(5) {
+	background-color: #354452;
+	color: white;
+}
+
+.pageTitle p {
+	color: black;
+	max-width: 200px;
+	padding: .5rem;
+}
+
+.pageTitle p:nth-of-type(1) {
+	background-color: #B6CADD;
+}
+
+.pageTitle p:nth-of-type(2) {
+	background-color: black;
+	color: white;
+}
+
+.pageTitle p:nth-of-type(3) {
+	color: white;
+	background-color: #354452;
+}
+
+.pageTitle p:nth-of-type(4) {
+	background-color: white;
+	border: 1px solid black;
+}
+
+.pageTitle p:nth-of-type(5) {
+	background-color: #F2AF58;
+}
+
+.footerSection p {
+	color: black;
+	max-width: 200px;
+	padding: .5rem;
+}
+
+.footerSection p:nth-of-type(1) {
+	background-color: #B6CADD;
+}
+
+.footerSection p:nth-of-type(2) {
+	color: white;
+	background-color: black;
+}
+
 footer {
 	margin: 0 auto;
 	text-align: center;
@@ -51,16 +170,9 @@ img {
 		font-size: 1rem;
 	}
 
-	h3 {
-		margin-left: 15px;
-	}
-
-	ul {
-		margin-left: 15px;
-	}
-
-	p {
-		margin-left: 15px;
+	.demographics, .colorSchemeContent {
+		display: flex;
+		justify-content: space-evenly;
 	}
 	
 }
