@@ -100,7 +100,6 @@
     }
 
     .article {
-        position: block;
         overflow: auto;
         margin: 1rem;
     }
