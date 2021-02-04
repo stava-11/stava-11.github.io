@@ -279,14 +279,12 @@ main h2 {
 
 .contactInfo li a {
     text-decoration: none;
-
 }
 
-.contactInfo li a i {
-    padding: .4rem 0 0;
+.contactInfo li a img {
     margin-right: .5rem;
-    width: 2rem;
     height: 2rem;
+    width: 2rem;
 }
 
 footer {
