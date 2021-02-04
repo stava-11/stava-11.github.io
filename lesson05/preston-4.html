@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="WDD 230: Web Frontend Development Preston Idaho Page">
+    <meta name="author" content="John Stavast">
+    <title>Preston Idaho</title>
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favIcon.ico">
+</head>
+<body>
+    <div id='noticeAlert' class="noticeAlert">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9 AM Saturday at the city park.</p>
+    </div>
+    <div>
+<!-- HEADER HERE -->
+	<header>
+        <section class="contentWidth">
+            <img src="images/logoSmall.jpg" alt="Windy Idaho Weather Logo" class="smallLogo">
+            <img src="images/logoLarge.jpg" alt="Windy Idaho Weather Logo" class="largeLogo">
+            <h1>Windy Idaho Weather</h1>
+            <p>Where Idaho news blows on in!</p>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul id="menuOptions" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="#">Storm Center</a></li>  
+            <li><a href="#">Gallery</a></li>  
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class='heroDiv'>
+            <div class="hero-ph">
+                <img src="images/prestonHero.jpg" class="heroImgLarge" alt="Preston Landscape">
+                <img src="images/prestonHeroSmall.jpg" class="heroImgSmall" alt="Preston Landscape">
+            </div>
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <div class='summaryLabel'>
+                    <p>Currently:</p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
+                </div>
+                <div class='summaryDetail'>
+                    <p>Sunny</p>
+                    <p>82&#176;</p>
+                    <p>75&#176;</p>
+                    <p>35%</p>
+                    <p>5 mph</p>
+                </div>
+            </section>
+        </div>
+        <section class="fiveDayForecast">
+            <h3>5 Day Forecast</h3>
+            <table class='forecast'>
+                <tr>
+                    <th>
+                        Mon
+                    </th>
+                    <th>
+                        Tue
+                    </th>
+                    <th>
+                        Wed
+                    </th>
+                    <th>
+                        Thu
+                    </th>
+                    <th>
+                        Fri
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/Sunshine.png" alt="Sunshine Icon">
+                        <p>89&#176;</p>
+                    </td>
+                    <td>
+                        <img src="images/Sunshine.png" alt="Sunshine Icon">
+                        <p>91&#176;</p>
+                    </td>
+                    <td>
+                        <img src="images/Sunshine.png" alt="Sunshine Icon">
+                        <p>93&#176;</p>
+                    </td>
+                    <td>
+                        <img src="images/Sunshine.png" alt="Sunshine Icon">
+                        <p>95&#176;</p>
+                    </td>
+                    <td>
+                        <img src="images/Sunshine.png" alt="Sunshine Icon">
+                        <p>100&#176;</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="article">
+            <h3>Article Title</h3>
+            <p class="authorName">By: Author Name</p>
+            <img src="images/umbrellas.jpg" alt="Article Picture">
+            <p>
+                Lorem ipsum dolor sit amet, affert utroque sententiae duo ea, ius docendi vituperata 
+                , alii meliore dolorem sed id. Dissentias repudiandae ex per, vel alia dicam possit 
+                ei, verterem delicatissimi per at. Copiosae delicatissimi ei eam, dicta sonet inimicus
+                 usu te. At purto case nominavi eam. Vide erant contentiones at mea, cu rebum mollis 
+                 assentior nec, et vis ignota epicuri. Et vis nisl constituto, appareat singulis 
+                 necessitatibus an qui.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, affert utroque sententiae duo ea, ius docendi vituperata 
+                , alii meliore dolorem sed id. Dissentias repudiandae ex per, vel alia dicam possit 
+                ei, verterem delicatissimi per at. Copiosae delicatissimi ei eam, dicta sonet inimicus
+                 usu te. At purto case nominavi eam. Vide erant contentiones at mea, cu rebum mollis 
+                 assentior nec, et vis ignota epicuri. Et vis nisl constituto, appareat singulis 
+                 necessitatibus an qui.
+            </p>
+        </section>
+        <section class="contact-ph">
+            <h3>Contact Information</h3>
+            <div class="contactDiv">
+                <img src="images/map.png" alt="Map" class="map">
+                <ul class="contactInfo">
+                    <li><strong>Windy Idaho Weather</strong></li>
+                    <li>3 N 1st E</li>
+                    <li>Preston, ID 83263</li>
+                    <br>
+                    <li><i class="fa fa-phone"></i>999.999.9999</li>
+                    <li><i class="fa fa-envelope"></i>news@wiw.com</li>
+                    <br>
+                    <li>    
+                        <a href="facebook.com"><i class="fa fa-facebook"></i> </a>
+                        <a href="twitter.com"><i class="fa fa-twitter"></i> </a>
+                        <a href="instagram.com"><i class="fa fa-instagram"></i> </a>
+                        <a href="pinterest.com"><i class="fa fa-pinterest"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="clearfix">
+        <p id='date'> </p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+</div>
+</body>
+</html>
