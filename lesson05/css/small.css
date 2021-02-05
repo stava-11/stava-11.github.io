@@ -221,39 +221,6 @@ main h2 {
     display: block;
 }
 
-.fa {
-    padding: 1rem;
-    font-size: 2rem;
-    width: 3rem;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-  
-.fa:hover {
-    opacity: 0.8;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
 .map {
     display: none;
 }
