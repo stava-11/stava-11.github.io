@@ -122,6 +122,7 @@
 
     .contactInfo {
         grid-column: 2;
+        margin-left: 3rem;
     }
 
 
