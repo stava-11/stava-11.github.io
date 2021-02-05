@@ -142,8 +142,9 @@ main h2 {
 }
 
 .weatherSummary {
-    background-color: rgba(242, 175, 88, .95);
+    background-color: rgba(242, 175, 88, .8);
     box-shadow: 1px 1px 10px 1px rgba(84, 85, 84, .5);
+    border: 1px solid rgba(242, 175, 88, 1);
     width: fit-content;
     padding: 1rem;
     position: absolute;
@@ -171,13 +172,14 @@ main h2 {
     text-align: right;
     float: left;
     color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .summaryDetail {
     text-align: left;
     float: left;
     margin-left: .5rem;
-    color: #354452;
+    color: black;
 }
 
 .article {
