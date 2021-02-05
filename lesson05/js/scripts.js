@@ -12,6 +12,7 @@ var year = d.getFullYear()
  var day = dayOfWeek[n]
 // console.log(day + ', ' + dayOfMonth + ' ' + monthOfYear[month-1] + ' ' + year + '.')
 document.getElementById('date').innerHTML = (day + ', ' + dayOfMonth + ' ' + monthOfYear[month-1] + ' ' + year + '.');
+document.getElementById('year').innerHTML = year;
 
 function showNotice(day) {
     if (day === 'Friday') {
