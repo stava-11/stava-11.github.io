@@ -234,6 +234,14 @@ main h2 {
     list-style: none;
 }
 
+.abovePhone{ 
+    margin-top: 1rem;
+}
+
+.belowEmail {
+    margin-bottom: 1rem;
+}
+
 .contactPhone {
     height: 15px;
     padding-top: .2rem;
