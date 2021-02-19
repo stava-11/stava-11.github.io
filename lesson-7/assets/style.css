@@ -9,19 +9,16 @@ h1 {
     grid-column: 1;
 }
 
+img[data-src] {
+    filter:blur(.2em);
+}
+
 img {
     width: 300px;
     height: 400px;
     grid-column: 1;
     padding: .2rem;
     border: solid 1px black;
-}
-
-main img[data-src] {
-    filter:blur(.2em);
-}
-
-main img {
     filter: blur(0em);
     transition: .1s;
 }
