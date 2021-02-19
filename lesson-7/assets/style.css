@@ -11,6 +11,7 @@ h1 {
 
 img[data-src] {
     filter:blur(.2em);
+    filter:opacity(.5em);
 }
 
 img {
