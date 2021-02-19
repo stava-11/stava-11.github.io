@@ -17,7 +17,7 @@ img {
     border: solid 1px black;
 }
 
-main img[src] {
+main img[data-src] {
     filter:blur(.2em);
 }
 
