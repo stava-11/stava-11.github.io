@@ -13,7 +13,7 @@ const loadImages = (image) => {
 //set options
 const options = {
   threshold: 1,
-  rootMargin: "10px 10px 10px 10px"
+  rootMargin: "0px 0px 100px 0px"
 };
 
 // load image as user scrolls over image
