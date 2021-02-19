@@ -19,7 +19,6 @@ img {
 
 main img[data-src] {
     filter:blur(.2em);
-    filter:contrast(1em)
 }
 
 main img {

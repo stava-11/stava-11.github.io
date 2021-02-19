@@ -12,7 +12,7 @@ const loadImages = (image) => {
 
 //set options
 const options = {
-  threshold: 0,
+  threshold: 1,
   rootMargin: "10px 10px 10px 10px"
 };
 
