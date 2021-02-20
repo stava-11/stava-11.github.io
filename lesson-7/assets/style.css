@@ -10,8 +10,8 @@ h1 {
 }
 
 img[data-src] {
-    filter:blur(.2em);
-    filter:opacity(.5em);
+    filter: blur(0.2em);
+    filter: opacity(0.5em);
 }
 
 img {
