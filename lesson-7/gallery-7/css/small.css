@@ -1,0 +1,302 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.noticeAlert {
+    text-align: center;
+    background-color: rgba(242, 175, 88, 1);
+    padding: 1rem;
+}
+
+.noticeHide {
+    display: none;
+}
+
+.noticeAlert p {
+    margin: 0;
+}
+
+header {
+    max-width: 100%;
+    background-color: #F2F6F6;
+}
+
+.contentWidth {
+    display: grid;
+    grid-template-columns: auto 60% 20%;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+header img {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+header .largeLogo {
+    display: none;
+}
+
+header h1 {
+    grid-column: 2;
+    font-size: 1.3rem;
+    margin: 0;
+    align-self: end;
+    color: #354452;
+    text-shadow: 1px 1px #b6CADD;
+}
+
+header p {
+    grid-column: 2;
+    font-size: .7rem;
+    margin: 0;
+    padding-left: .2rem;
+    align-self: start;
+    color: #354452;
+}
+
+header button {
+    grid-column: 3;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    height: 1.8em;
+    width: 1.8em;
+    background-color: #4567DB;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+nav {
+    background-color: #4567DB;;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2); 
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    display: block;
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    padding: .8rem .6rem .8rem 2rem;
+    background-color: #B6CADD;
+    margin: 0;
+}
+
+.heroDiv {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero-ph {
+    margin: 0;
+}
+
+.hero-ph img {
+    width: 100%;
+    height: auto;
+}
+
+.weatherSummary {
+    background-color: rgba(242, 175, 88, .8);
+    box-shadow: 1px 1px 10px 1px rgba(84, 85, 84, .5);
+    border: 1px solid rgba(242, 175, 88, 1);
+    width: fit-content;
+    padding: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.weatherLabel, .weatherDetail {
+    margin: 0;
+}
+
+.weatherSummary h3 {
+    border-bottom: 1px solid white;
+    margin: 0 0 .5rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.weatherSummary p {
+    margin: 0;
+    padding: 0;
+}
+
+.summaryLabel {
+    text-align: right;
+    float: left;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.summaryDetail {
+    text-align: left;
+    float: left;
+    margin-left: .5rem;
+    color: black;
+}
+
+.article {
+    max-width: 100%;
+    height: inherit;
+    background-color: #F2F6F6;
+    border: .1rem solid #354452;
+    margin: 2rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.article h3 {
+    margin: 0;
+}
+
+.authorName {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: .5rem;
+}
+
+.article img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 10px 1px rgba(84, 85, 84, .5);
+}
+
+.contact-ph {
+    max-width: 100%;
+    height: inherit;
+    background-color: rgba(69, 103, 219, .2);
+    border: .1rem solid rgba(69, 103, 219, .8);
+    margin: 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.contact-ph h3 {
+    margin: 0 0 1rem;
+    display: block;
+}
+
+.map {
+    display: none;
+}
+
+.contactInfo {
+    padding: 0;
+    margin: 0;
+}
+
+.contactInfo li {
+    list-style: none;
+}
+
+.abovePhone{ 
+    margin-top: 1rem;
+}
+
+.belowEmail {
+    margin-bottom: 1rem;
+}
+
+.contactPhone {
+    height: 15px;
+    padding-top: .2rem;
+    margin: 0 .3rem 0 0;
+}
+
+.contactEmail {
+    height: 15px;
+    padding-top: .2rem;
+    margin: 0 .3rem 0 0;
+}
+
+.fiveDayForecast {
+    display: none;
+}
+
+.contactInfo li a {
+    text-decoration: none;
+}
+
+.contactInfo li a img {
+    margin-right: .5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #F2F6F6;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/*------ Gallery Page Grid ------*/
+.gallery {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.gallery picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
