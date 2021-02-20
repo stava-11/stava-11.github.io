@@ -20,6 +20,7 @@ img {
     padding: .2rem;
     border: solid 1px black;
     filter: blur(0em);
+    transition: filter 1s;
     transition: .1s;
 }
 
