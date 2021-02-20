@@ -10,4 +10,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 } 
 
+/* hover effect */
+.gallery picture:hover {box-shadow: 0 0 15px #333;}
+
 } /*end large */

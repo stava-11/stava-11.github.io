@@ -44,6 +44,6 @@ var dayOfMonth = d.getDate();
 var month = d.getMonth() + 1;
 var year = d.getFullYear();
 var day = dayOfWeek[n];
-// console.log(day + ', ' + dayOfMonth + ' ' + monthOfYear[month-1] + ' ' + year + '.')
+
 document.getElementById('lastUpdate').innerHTML = (day + ', ' + dayOfMonth + ' ' + monthOfYear[month-1] + ' ' + year + '.');
 document.getElementById('year').innerHTML = year;
