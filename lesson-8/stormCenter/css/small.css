@@ -305,7 +305,7 @@ footer {
 /*------ Storm Page ------*/
 
 form fieldset {
-    margin: 2rem 1rem 1rem;
+    margin: 2rem 0 1rem;
     border: 1px solid #445ba9;
     border-radius: 10px;
     padding: .5rem 2% 1.4rem;
