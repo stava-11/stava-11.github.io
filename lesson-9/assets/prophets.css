@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    color:#5D5D9E;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .2rem;
+    background-color: #DDDDDD;
+    box-shadow: 0 0 1.5rem .5rem #A3A3B3;
+    padding: 1.5rem;
+    margin: 2rem;
+}  
+
+section {
+    grid-row: auto;
+    background-color: rgba(151,151,187,.6);
+    border: 3px solid rgb(151,151,187);
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 0 10px 8px #A3A3B3;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin:1rem 0 .5rem;
+    color:#5D5D9E;
+}
+
+p {
+    font-size: 1.8rem;
+    margin: 0 0 .7rem;
+    padding: 0 .5rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+
+
+/*****************
+Medium media size
+
+*****************/
+
+@media (min-width: 850px) { 
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }  
+    
+}
+
+/*****************
+Large media size
+
+*****************/
+
+@media (min-width: 1600px) { 
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }  
+    
+}
+
+
+
