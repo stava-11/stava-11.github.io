@@ -22,7 +22,7 @@ h1 {
 
 section {
     grid-row: auto;
-    background-color: rgba(151,151,187,.6);
+    background-color: rgba(51,151,187,.6);
     border: 3px solid rgb(151,151,187);
     text-align: center;
 }
