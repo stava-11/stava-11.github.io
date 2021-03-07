@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Windy Idaho Weather - Image Gallery">
+    <meta name="author" content="John Stavast">
+    <title>Windy Idaho Weather - Preston Idaho</title>
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favIcon.ico">
+</head>
+<body>
+    <div id="noticeAlert" class="noticeAlert">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9 AM Saturday at the city park.</p>
+    </div>
+    <div>
+<!-- HEADER HERE -->
+	<header>
+        <section class="contentWidth">
+            <img src="images/logoSmall.jpg" alt="Windy Idaho Weather Logo" class="smallLogo">
+            <img src="images/logoLarge.jpg" alt="Windy Idaho Weather Logo" class="largeLogo">
+            <h1>Windy Idaho Weather</h1>
+            <p>Where Idaho news blows on in!</p>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul id="menuOptions" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="stormcenter.html">Storm Center</a></li>  
+            <li class="active"><a href="gallery.html">Gallery</a></li>  
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <section>
+		<h2>Weather Gallery</h2>
+		<div class="gallery">
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/cloud_over_lake.jpg" alt="Cloud floating over a lake">
+			<figcaption>Cloud floating over a lake</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/lightning_at_night.jpg" alt="Lightning strike at night">
+			<figcaption>Lightning strike at night</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/rainbow.jpg" alt="Beautiful rainbow">
+			<figcaption>Beautiful rainbow</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/snow_sunset.jpg" alt="Sunset in winter">
+			<figcaption>Sunset in winter</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/sunny_day.jpg" alt="Sunny day">
+			<figcaption>Sunny day</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/tornado.jpg" alt="Tornado">
+			<figcaption>Tornado forming</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/wheat_field.jpg" alt="Sunny day in wheat field">
+			<figcaption>Sunny day in wheat field</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/winter_lake.jpg" alt="Frozn lake in winter">
+			<figcaption>Winter lake</figcaption>
+		    </figure>
+		    <figure>
+			<img src="https://via.placeholder.com/300x200" data-src="images/gallery/multiple_lightning_strikes.jpg" alt="Multiple lightning strikes">
+			<figcaption>Multiple lightning strikes</figcaption>
+		    </figure>
+		</div>
+        </section>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="clearfix">
+        <p>
+            &#169; <span id="year"></span> | John A. Stavast | Idaho |
+            <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer">BYUI Online Learning</a>
+       </p>
+        <p id="date"> </p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+<script src="js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+  google: {
+    families: [
+       "Roboto"
+    ]
+  }
+});
+  </script>
+</div>
+</body>
+</html>
