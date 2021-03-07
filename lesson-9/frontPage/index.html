@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Windy Idaho Weather - Image Gallery">
+    <meta name="author" content="John Stavast">
+    <title>Windy Idaho Weather - Preston Idaho</title>
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favIcon.ico">
+</head>
+<body>
+    <div id="noticeAlert" class="noticeAlert">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9 AM Saturday at the city park.</p>
+    </div>
+    <div>
+<!-- HEADER HERE -->
+	<header>
+        <section class="contentWidth">
+            <img src="images/logoSmall.jpg" alt="Windy Idaho Weather Logo" class="smallLogo">
+            <img src="images/logoLarge.jpg" alt="Windy Idaho Weather Logo" class="largeLogo">
+            <h1>Windy Idaho Weather</h1>
+            <p>Where Idaho news blows on in!</p>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </section>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul id="menuOptions" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>    
+            <li><a href="#">Storm Center</a></li>  
+            <li class="active"><a href="#">Gallery</a></li>  
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <section class="hero-ph">
+            <picture>
+                <source srcset="images/lightning_450.jpg" media="(max-width: 450px)">
+                <source srcset="images/lightning_650.jpg" media="(min-width: 451px) and (max-width: 650px)">
+                <source srcset="images/lightning_975.jpg" media="(min-width: 651px)">
+                <img src="images/lightning_450.jpg" alt="Lightning Storm">
+            </picture>
+        </section>
+        <section class="cards"></section>
+        <section class="single-col-card">
+            <h3>Article</h3>
+            <p>You should read this article too becuase it's really cool!</p>
+        </section>
+        
+        <section class="contact-ph clearfix">
+            <h3>Contact Information</h3>
+            <div class="contactDiv">
+                <img src="images/map.png" alt="Map" class="map">
+                <ul class="contactInfo">
+                    <li><strong>Windy Idaho Weather</strong></li>
+                    <li>3 N 1st E</li>
+                    <li>Preston, ID 83263</li>
+                    <li class="abovePhone"><img src="images/phone.svg" alt="Phone Icon" class="contactPhone">999.999.9999</li>
+                    <li class="belowEmail"><img src="images/email.svg" alt="Email Icon" class="contactEmail">news@wiw.com</li>
+                    <li>    
+                        <a href="facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                        <a href="twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+                        <a href="instagram.com"><img src="images/instagram.png" alt="Instagram Icon"></a>
+                        <a href="pinterest.com"><img src="images/pinterest.png" alt="Pinterest Icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer class="clearfix">
+        <p>
+            &#169; <span id="year"></span> | John A. Stavast | Idaho |
+            <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer">BYUI Online Learning</a>
+       </p>
+        <p id="date"> </p>
+    </footer>
+    
+<script src="js/scripts.js"></script>
+<script src="js/cards.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+  google: {
+    families: [
+       "Roboto"
+    ]
+  }
+});
+  </script>
+</div>
+</body>
+</html>
