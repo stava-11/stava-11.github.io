@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+// mixins to take care of repeated patterns.
+@mixin set-font-yellow($color: $primary) {
+  color: $color;
+}
+
+@mixin uppercase() {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: $fonts-h1;
+  color: $text-dark;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  font-family: $fonts-h2;
+  color: $text-dark;
+}
+
+h3 {                      
+  font-family: $fonts-h3;
+  color: $text-dark;
+}
+
+p {
+  font-family: $fonts-p;
+  color: $text-dark;
+}
+
+

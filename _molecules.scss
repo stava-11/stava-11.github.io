@@ -1,0 +1,7 @@
+@use 'variables' as *;
+@use 'atoms';
+
+.yellowLetter {
+  @include atoms.set-font-yellow($primary);
+}
+
