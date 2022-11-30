@@ -27,7 +27,7 @@ a {
 }
 
 li {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .page-wrapper {
@@ -99,7 +99,6 @@ header h2 {
 }
 .summary p:nth-child(2) {
   grid-column: 3/4;
-  margin-left: 1em;
 }
 
 .preamble {
@@ -108,6 +107,8 @@ header h2 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-column-gap: 0.65vw;
 }
 .preamble h3 {
   font-size: 6.5vw;
@@ -120,31 +121,24 @@ header h2 {
 .preamble p:nth-child(2) {
   grid-column: 1/5;
   grid-row: 2/3;
-  padding-right: 0.5rem;
   text-align: justify;
 }
 .preamble p:nth-child(3) {
   grid-column: 1/5;
   grid-row: 3/6;
-  padding-right: 0.5rem;
   text-align: justify;
 }
 .preamble p:nth-child(3)::after {
   content: "Dreary";
-  font-size: 6vw;
-  text-align: justify;
   grid-column: 1/5;
-  background-color: black;
-  color: white;
   font-family: "Fredericka the Great", cursive;
-  width: 100%;
-  letter-spacing: 0.3em;
-  padding: 0 1rem 0.5rem 1rem;
+  color: black;
+  font-size: 5.7em;
+  letter-spacing: 3em;
 }
 .preamble p:nth-child(4) {
   grid-column: 5/7;
   grid-row: 2/4;
-  padding-right: 1rem;
   text-align: justify;
 }
 
@@ -160,7 +154,6 @@ header h2 {
   border-top: 0.6rem solid black;
   border-right: 0.6rem solid black;
   border-left: 0.6rem solid black;
-  border-radius: 3px;
 }
 .explanation h3 {
   width: 100%;
@@ -195,7 +188,7 @@ header h2 {
   float: right;
   width: 3vw;
   height: 10vw;
-  padding-left: 1.75rem;
+  padding-left: 1.2vw;
 }
 .explanation p:nth-child(3) {
   grid-column: 11/13;
@@ -204,7 +197,7 @@ header h2 {
   text-align: justify;
 }
 .explanation p:nth-child(3) > abbr {
-  font-size: 4.5em;
+  font-size: 4vw;
   text-transform: uppercase;
   text-shadow: 0.25vw 0.25vw grey;
   padding: 0;

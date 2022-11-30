@@ -68,7 +68,7 @@ header {
   
   p:nth-child(2) {
     grid-column: 3/4;
-    margin-left: 1em;;
+    // margin-left: 1em;
   }
 }
 
@@ -78,6 +78,8 @@ header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-column-gap: .65vw;
 
   h3 {
     font-size: 6.5vw;
@@ -91,34 +93,27 @@ header {
   p:nth-child(2) {
     grid-column: 1/5;
     grid-row: 2/3;
-    padding-right: 0.5rem;
     text-align: justify;
   }
   
   p:nth-child(3) {
     grid-column: 1/5;
     grid-row: 3/6;
-    padding-right: 0.5rem;
     text-align: justify;
   }
   
   p:nth-child(3)::after {
     content: "Dreary";
-    font-size: 6vw;
-    text-align: justify;
     grid-column: 1/5;
-    background-color: black;
-    color: white;
     font-family: $fonts-h3;
-    width: 100%;
-    letter-spacing: .3em;
-    padding: 0 1rem 0.5rem 1rem;
+    color: black;
+    font-size: 5.7em;
+    letter-spacing: 3em;
   }
   
   p:nth-child(4) {
     grid-column: 5/7;
     grid-row: 2/4;
-    padding-right: 1rem;
     text-align: justify;
   }
 }
@@ -135,7 +130,6 @@ header {
   border-top: $content-border-style;
   border-right: $content-border-style;
   border-left: $content-border-style;
-  border-radius: 3px;
 
   h3 {
     width: 100%;
@@ -167,7 +161,7 @@ header {
     float: right;
     width: 3vw;
     height: 10vw;
-    padding-left: 1.75rem;
+    padding-left: 1.2vw;
   }
   
   p:nth-child(3) {
@@ -178,7 +172,7 @@ header {
   }
   
   p:nth-child(3) > abbr {
-    font-size: 4.5em;
+    font-size: 4vw;
     @include atoms.uppercase();
     text-shadow: .25vw .25vw grey;
     padding: 0;
