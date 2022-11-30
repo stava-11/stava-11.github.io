@@ -48,8 +48,8 @@ header {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 15% 90%;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
+  border-top: 6px solid black;
+  border-bottom: 6px solid black;
 }
 header h1 {
   display: flex;
@@ -160,9 +160,9 @@ header h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 62% 58%;
-  border-top: 15px solid black;
-  border-right: 15px solid black;
-  border-left: 15px solid black;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+  border-left: 10px solid black;
   border-radius: 3px;
 }
 .explanation h3 {
@@ -245,7 +245,7 @@ header h2 {
   grid-row: 8/14;
   display: block;
   padding: 1rem;
-  border-right: 15px solid black;
+  border-right: 10px solid black;
 }
 .benefits h3 {
   font-size: 3vw;
@@ -277,7 +277,7 @@ header h2 {
   text-transform: uppercase;
   float: left;
   font-family: "Fredericka the Great", cursive;
-  font-size: 6vw;
+  font-size: 4vw;
   color: #272635;
   font-weight: bolder;
   margin: 0;
@@ -300,9 +300,9 @@ footer {
   height: 100%;
   width: 100%;
   padding-top: 1rem;
-  border-right: 15px solid black;
-  border-bottom: 15px solid black;
-  border-left: 15px solid black;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
 }
 footer a {
   font-size: 4vw;
@@ -323,7 +323,7 @@ footer a:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  border-right: 15px solid black;
+  border-right: 10px solid black;
 }
 
 .select, .archives, .resources {
