@@ -1,19 +1,30 @@
 @use 'variables' as *;
 
-// mixins to take care of repeated patterns.
-@mixin set-font-yellow($color: $primary) {
-  color: $color;
-}
-
 @mixin uppercase() {
   text-transform: uppercase;
 }
 
-h1 {
-  font-family: $fonts-h1;
-  color: $text-dark;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
+@mixin mainGrid() {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:  repeat(14, 1fr) 7vw;
+}
+
+@mixin mainGridLayer() {
+  grid-column: 1/span all;
+  grid-row: 1/span all;
+  @include mainGrid();
+}
+
+@mixin typing() {
+  @keyframes typing {
+      0% { width:0% }
+      60% { width:100%}
+  }
+}
+
+body {
+  background-color: $background-color;
 }
 
 h2 {
@@ -24,11 +35,21 @@ h2 {
 h3 {                      
   font-family: $fonts-h3;
   color: $text-dark;
+  margin: 0;
 }
 
 p {
+  margin: 0;
   font-family: $fonts-p;
+  color: $text-dark;
+  hyphens: auto;
+  font-size: 1vw;
+}
+
+a {
   color: $text-dark;
 }
 
-
+li {
+  font-size: 2vw;
+}
