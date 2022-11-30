@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+@mixin uppercase() {
+  text-transform: uppercase;
+}
+
+@mixin mainGrid() {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:  repeat(14, 1fr) 7vw;
+}
+
+@mixin mainGridLayer() {
+  grid-column: 1/span all;
+  grid-row: 1/span all;
+  @include mainGrid();
+}
+
+@mixin typing() {
+  @keyframes typing {
+      0% { width:0% }
+      60% { width:100%}
+  }
+}
+
+body {
+  background-color: $background-color;
+}
+
+h2 {
+  font-family: $fonts-h2;
+  color: $text-dark;
+}
+
+h3 {                      
+  font-family: $fonts-h3;
+  color: $text-dark;
+}
+
+p {
+  font-family: $fonts-p;
+  color: $text-dark;
+  hyphens: auto;
+}
+
+a {
+  color: $text-dark;
+}

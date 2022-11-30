@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Coda+Caption&family=Fredericka+the+Great&family=Great+Vibes&family=Nova+Square&family=Skranji:wght@700&display=swap");
+body {
+  background-color: #F1ECCE;
+}
+
+h2 {
+  font-family: "BioRhyme Expanded", serif;
+  color: #272635;
+}
+
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  color: #272635;
+}
+
+p {
+  font-family: "BioRhyme Expanded", serif;
+  color: #272635;
+  hyphens: auto;
+}
+
+a {
+  color: #272635;
+}
+
+/*# sourceMappingURL=_atoms.css.map */
