@@ -35,12 +35,15 @@ h2 {
 h3 {                      
   font-family: $fonts-h3;
   color: $text-dark;
+  margin: 0;
 }
 
 p {
+  margin: 0;
   font-family: $fonts-p;
   color: $text-dark;
   hyphens: auto;
+  font-size: 1vw;
 }
 
 a {
