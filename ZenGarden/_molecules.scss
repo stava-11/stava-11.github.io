@@ -87,8 +87,7 @@ header {
     grid-row: 1/2;
     justify-self: center;
     align-self: start;
-    margin: 0 0 2rem 0;
-    letter-spacing: .2rem;
+    margin: 0;
     line-height: .9;
   }
   
@@ -98,7 +97,7 @@ header {
     grid-row: 2/3;
     margin: 0;
     text-align: justify;
-    padding-right: 2rem;
+    padding-right: 0.5rem;
   }
   
   p:nth-child(3) {
@@ -107,7 +106,7 @@ header {
     grid-row: 3/6;
     margin: 0;
     text-align: justify;
-    padding-right: 2rem;
+    padding-right: 0.5rem;
   }
   
   p:nth-child(3)::after {
@@ -120,7 +119,7 @@ header {
     font-family: $fonts-h3;
     width: 100%;
     letter-spacing: .3em;
-    padding: 0 0 1rem 3rem;
+    padding: 0 1rem 0.5rem 1rem;
   }
   
   p:nth-child(4) {
@@ -128,7 +127,7 @@ header {
     grid-column: 5/7;
     grid-row: 2/4;
     margin: 0;
-    padding-right: 2rem;
+    padding-right: 1rem;
     text-align: justify;
   }
 }
@@ -209,11 +208,11 @@ header {
   grid-column: 5/11;
   grid-row: 10/13;
   display: block;
-  margin: 0;
+  margin: 0 1rem 0 0;
 
   h3 {
     font-family: $fonts-h3;
-    font-size: 7.6vw;
+    font-size: 7.4vw;
     margin: 0;
   }
   
@@ -255,9 +254,9 @@ header {
   column-count: 2;
   grid-auto-flow: column;
   display: block;
-  border-left: 15px solid black;
-  margin-top: 3rem;
-  padding: 0 1rem;
+  border-left: $content-border-style;
+  margin: 0 1rem 0 0;
+  padding: 0;
 
   h3 {
     writing-mode: vertical-rl;
