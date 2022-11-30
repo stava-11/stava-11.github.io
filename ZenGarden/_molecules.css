@@ -24,6 +24,7 @@ p {
 
 a {
   color: #272635;
+  text-decoration: none;
 }
 
 li {
@@ -134,7 +135,7 @@ header h2 {
   font-family: "Fredericka the Great", cursive;
   color: black;
   font-size: 5.7em;
-  letter-spacing: 3em;
+  letter-spacing: 0.3em;
 }
 .preamble p:nth-child(4) {
   grid-column: 5/7;
@@ -150,16 +151,16 @@ header h2 {
   background-image: url(./images/rename.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 62% 58%;
+  background-size: 62% 48%;
   border-top: 0.6rem solid black;
   border-right: 0.6rem solid black;
   border-left: 0.6rem solid black;
 }
 .explanation h3 {
-  width: 100%;
-  text-align: center;
   grid-column: 1/span all;
   grid-row: 1/2;
+  width: 100%;
+  text-align: center;
   align-self: center;
   justify-self: center;
   font-size: 8vw;
@@ -261,9 +262,6 @@ header h2 {
 .requirements p {
   text-align: justify;
 }
-.requirements p:nth-child(2) {
-  margin-right: 1rem;
-}
 
 footer {
   grid-column: 1/span all;
@@ -277,11 +275,11 @@ footer {
   border-right: 0.6rem solid black;
   border-bottom: 0.6rem solid black;
   border-left: 0.6rem solid black;
+  z-index: 1;
 }
 footer a {
   font-size: 4vw;
   align-self: end;
-  text-decoration: none;
   font-family: "BioRhyme Expanded", serif;
   background-color: black;
   width: 100%;
