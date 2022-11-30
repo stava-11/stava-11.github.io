@@ -7,7 +7,7 @@
 @mixin mainGrid() {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows:  repeat(14, 1fr) 7vw;
+  grid-template-rows:  repeat(15, 1fr) 7vw;
 }
 
 @mixin mainGridLayer() {
