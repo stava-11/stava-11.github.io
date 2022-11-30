@@ -3,6 +3,11 @@ body {
   background-color: #F1ECCE;
 }
 
+h1 {
+  font-family: "Skranji", cursive;
+  color: #272635;
+}
+
 h2 {
   font-family: "BioRhyme Expanded", serif;
   color: #272635;
@@ -35,7 +40,7 @@ li {
   margin: 1.5em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(14, 1fr) 7vw;
+  grid-template-rows: repeat(15, 1fr) 7vw;
 }
 
 .intro, .main, .sidebar {
@@ -43,7 +48,7 @@ li {
   grid-row: 1/span all;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(14, 1fr) 7vw;
+  grid-template-rows: repeat(15, 1fr) 7vw;
 }
 
 header {
@@ -69,8 +74,6 @@ header h1 {
   align-self: start;
   margin: 1vw 0 0 10vw;
   padding: 0;
-  font-family: "Skranji", cursive;
-  color: #272635;
 }
 header h2 {
   font-size: 1vw;

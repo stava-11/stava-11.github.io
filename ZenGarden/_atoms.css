@@ -3,6 +3,11 @@ body {
   background-color: #F1ECCE;
 }
 
+h1 {
+  font-family: "Skranji", cursive;
+  color: #272635;
+}
+
 h2 {
   font-family: "BioRhyme Expanded", serif;
   color: #272635;
