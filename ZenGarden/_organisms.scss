@@ -1,1 +1,22 @@
+@use 'variables' as *;
+@use 'atoms';
 
+.page-wrapper {
+    margin: 1.5em;
+    @include atoms.mainGridLarge();
+}
+
+.intro, .main, .sidebar {
+    @include atoms.mainGridLargeLayer();
+}
+
+@media only screen and (max-width: $smallViewSize) {
+    
+    .page-wrapper {
+        @include atoms.mainGridSmall();
+    }
+        
+    .intro, .main, .sidebar {
+        @include atoms.mainGridSmallLayer();
+    }
+}

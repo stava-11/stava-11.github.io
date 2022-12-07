@@ -4,16 +4,28 @@
   text-transform: uppercase;
 }
 
-@mixin mainGrid() {
+@mixin mainGridLarge() {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows:  repeat(15, 1fr) 7vw;
 }
 
-@mixin mainGridLayer() {
+@mixin mainGridLargeLayer() {
   grid-column: 1/span all;
   grid-row: 1/span all;
-  @include mainGrid();
+  @include mainGridLarge();
+}
+
+@mixin mainGridSmall() {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  repeat(9, 1fr) 5vw;
+}
+
+@mixin mainGridSmallLayer() {
+  grid-column: 1/2;
+  grid-row: 1/span all;
+  @include mainGridSmall();
 }
 
 @mixin typing() {

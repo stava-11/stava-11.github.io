@@ -1,3 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Coda+Caption&family=Fredericka+the+Great&family=Great+Vibes&family=Nova+Square&family=Skranji:wght@700&display=swap");
+body {
+  background-color: #F1ECCE;
+}
 
+h1 {
+  font-family: "Skranji", cursive;
+  color: #272635;
+}
+
+h2 {
+  font-family: "BioRhyme Expanded", serif;
+  color: #272635;
+}
+
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  color: #272635;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-family: "BioRhyme Expanded", serif;
+  color: #272635;
+  hyphens: auto;
+  font-size: 1vw;
+}
+
+a {
+  color: #272635;
+  text-decoration: none;
+}
+
+li {
+  font-size: 1.5vw;
+}
+
+.page-wrapper {
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(15, 1fr) 7vw;
+}
+
+.intro, .main, .sidebar {
+  grid-column: 1/span all;
+  grid-row: 1/span all;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(15, 1fr) 7vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(20, 1fr);
+  }
+  .intro, .main, .sidebar {
+    grid-column: 1/2;
+    grid-row: 1/span all;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(20, 1fr);
+  }
+}
 
 /*# sourceMappingURL=organisms.css.map */
