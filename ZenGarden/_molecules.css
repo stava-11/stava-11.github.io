@@ -118,7 +118,12 @@ header h2 {
   text-align: justify;
 }
 .preamble p:nth-child(3)::after {
-  display: none;
+  content: "Dreary";
+  grid-column: 1/2;
+  font-family: "Fredericka the Great", cursive;
+  color: black;
+  font-size: 5.7em;
+  letter-spacing: 0.3em;
 }
 .preamble p:nth-child(4) {
   grid-column: 5/7;
@@ -341,6 +346,9 @@ footer a:first-child {
     border-right: 0.6rem solid black;
     border-left: 0.6rem solid black;
     padding: 0.5em;
+  }
+  .preamble p:nth-child(3)::after {
+    display: none;
   }
   .explanation {
     grid-column: 1/2;

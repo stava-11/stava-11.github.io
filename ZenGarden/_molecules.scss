@@ -91,7 +91,12 @@ header {
   }
   
   p:nth-child(3)::after {
-    display: none;
+    content: "Dreary";
+      grid-column: 1/2;
+      font-family: $fonts-h3;
+      color: black;
+      font-size: 5.7em;
+      letter-spacing: .3em;
   }
   
   p:nth-child(4) {
@@ -361,9 +366,9 @@ footer {
     //   text-align: justify;
     // }
     
-    // p:nth-child(3)::after {
-    //   display: none;
-    // }
+    p:nth-child(3)::after {
+      display: none;
+    }
     
     // p:nth-child(4) {
     //   grid-column: 1/2;
@@ -399,7 +404,7 @@ footer {
     p:nth-child(2) {
       // grid-column: 1/2;
       // grid-row: 5/6;
-      margin-top: 21em;
+      // margin-top: 21em;
       // @media only screen and (max-width: 400px) {
       //   margin-top: 23em;
       // }
