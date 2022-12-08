@@ -4,16 +4,28 @@
   text-transform: uppercase;
 }
 
-@mixin mainGrid() {
+@mixin mainGridLarge() {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows:  repeat(14, 1fr) 7vw;
 }
 
-@mixin mainGridLayer() {
+@mixin mainGridLargeLayer() {
   grid-column: 1/span all;
   grid-row: 1/span all;
-  @include mainGrid();
+  @include mainGridLarge();
+}
+
+@mixin mainGridSmall() {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  repeat(9, 1fr) 5vw;
+}
+
+@mixin mainGridSmallLayer() {
+  grid-column: 1/2;
+  grid-row: 1/span all;
+  @include mainGridSmall();
 }
 
 @mixin typing() {
@@ -25,6 +37,11 @@
 
 body {
   background-color: $background-color;
+}
+
+h1 {
+  font-family: $fonts-h1;
+  color: $text-dark;
 }
 
 h2 {
@@ -48,8 +65,9 @@ p {
 
 a {
   color: $text-dark;
+  text-decoration: none;
 }
 
 li {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }

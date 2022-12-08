@@ -139,7 +139,7 @@ header h2 {
   background-image: url(./images/rename.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 62% 48%;
+  background-size: 62% 52%;
   border-top: 0.6rem solid black;
   border-right: 0.6rem solid black;
   border-left: 0.6rem solid black;
@@ -170,6 +170,7 @@ header h2 {
   grid-row: 2/span all;
   padding-left: 0.5rem;
   text-align: justify;
+  font-size: 0.9vw;
 }
 .explanation p:nth-child(2)::before {
   content: url(./images/lightning.svg);
@@ -219,7 +220,7 @@ header h2 {
   border-right: 0.6rem solid black;
 }
 .benefits h3 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   float: left;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -238,7 +239,7 @@ header h2 {
   display: block;
   border-left: 0.6rem solid black;
   margin: 0 1rem 0 0;
-  padding: 0;
+  padding: 0 0 0 1rem;
 }
 .requirements h3 {
   writing-mode: vertical-rl;
@@ -249,9 +250,6 @@ header h2 {
 }
 .requirements p {
   text-align: justify;
-}
-.requirements p:nth-child(2), .requirements h3 {
-  margin-top: 4rem;
 }
 
 footer {
@@ -275,6 +273,7 @@ footer a {
   background-color: black;
   width: 100%;
   color: white;
+  margin: -0.1em;
 }
 footer a:first-child {
   padding-left: 3rem;
@@ -287,6 +286,7 @@ footer a:first-child {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   border-right: 0.6rem solid black;
+  margin-top: 1rem;
 }
 
 .select, .archives, .resources {

@@ -3,6 +3,11 @@ body {
   background-color: #F1ECCE;
 }
 
+h1 {
+  font-family: "Skranji", cursive;
+  color: #272635;
+}
+
 h2 {
   font-family: "BioRhyme Expanded", serif;
   color: #272635;
@@ -24,25 +29,11 @@ p {
 
 a {
   color: #272635;
+  text-decoration: none;
 }
 
 li {
-  font-size: 2vw;
-}
-
-.page-wrapper {
-  margin: 1.5em;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(14, 1fr) 7vw;
-}
-
-.intro, .main, .sidebar {
-  grid-column: 1/span all;
-  grid-row: 1/span all;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(14, 1fr) 7vw;
+  font-size: 1.5vw;
 }
 
 header {
@@ -68,8 +59,6 @@ header h1 {
   align-self: start;
   margin: 1vw 0 0 10vw;
   padding: 0;
-  font-family: "Skranji", cursive;
-  color: #272635;
 }
 header h2 {
   font-size: 1vw;
@@ -99,7 +88,6 @@ header h2 {
 }
 .summary p:nth-child(2) {
   grid-column: 3/4;
-  margin-left: 1em;
 }
 
 .preamble {
@@ -108,6 +96,8 @@ header h2 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-column-gap: 0.65vw;
 }
 .preamble h3 {
   font-size: 6.5vw;
@@ -120,31 +110,24 @@ header h2 {
 .preamble p:nth-child(2) {
   grid-column: 1/5;
   grid-row: 2/3;
-  padding-right: 0.5rem;
   text-align: justify;
 }
 .preamble p:nth-child(3) {
   grid-column: 1/5;
   grid-row: 3/6;
-  padding-right: 0.5rem;
   text-align: justify;
 }
 .preamble p:nth-child(3)::after {
   content: "Dreary";
-  font-size: 6vw;
-  text-align: justify;
-  grid-column: 1/5;
-  background-color: black;
-  color: white;
+  grid-column: 1/2;
   font-family: "Fredericka the Great", cursive;
-  width: 100%;
+  color: black;
+  font-size: 5.7em;
   letter-spacing: 0.3em;
-  padding: 0 1rem 0.5rem 1rem;
 }
 .preamble p:nth-child(4) {
   grid-column: 5/7;
   grid-row: 2/4;
-  padding-right: 1rem;
   text-align: justify;
 }
 
@@ -156,17 +139,16 @@ header h2 {
   background-image: url(./images/rename.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 62% 58%;
+  background-size: 62% 52%;
   border-top: 0.6rem solid black;
   border-right: 0.6rem solid black;
   border-left: 0.6rem solid black;
-  border-radius: 3px;
 }
 .explanation h3 {
-  width: 100%;
-  text-align: center;
   grid-column: 1/span all;
   grid-row: 1/2;
+  width: 100%;
+  text-align: center;
   align-self: center;
   justify-self: center;
   font-size: 8vw;
@@ -186,8 +168,9 @@ header h2 {
 .explanation p:nth-child(2) {
   grid-column: 1/3;
   grid-row: 2/span all;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   text-align: justify;
+  font-size: 0.9vw;
 }
 .explanation p:nth-child(2)::before {
   content: url(./images/lightning.svg);
@@ -195,16 +178,16 @@ header h2 {
   float: right;
   width: 3vw;
   height: 10vw;
-  padding-left: 1.75rem;
+  padding-left: 1.2vw;
 }
 .explanation p:nth-child(3) {
   grid-column: 11/13;
   grid-row: 2/span all;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   text-align: justify;
 }
 .explanation p:nth-child(3) > abbr {
-  font-size: 4.5em;
+  font-size: 4vw;
   text-transform: uppercase;
   text-shadow: 0.25vw 0.25vw grey;
   padding: 0;
@@ -213,14 +196,14 @@ header h2 {
   float: left;
   background-color: rgb(58, 54, 54);
   color: white;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .participation {
   grid-column: 5/11;
   grid-row: 10/13;
   display: block;
-  margin: 0 1rem 0 0;
+  margin: 0;
 }
 .participation h3 {
   font-size: 7.4vw;
@@ -237,7 +220,7 @@ header h2 {
   border-right: 0.6rem solid black;
 }
 .benefits h3 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   float: left;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -256,7 +239,7 @@ header h2 {
   display: block;
   border-left: 0.6rem solid black;
   margin: 0 1rem 0 0;
-  padding: 0;
+  padding: 0 0 0 1rem;
 }
 .requirements h3 {
   writing-mode: vertical-rl;
@@ -267,9 +250,6 @@ header h2 {
 }
 .requirements p {
   text-align: justify;
-}
-.requirements p:nth-child(2) {
-  margin-right: 1rem;
 }
 
 footer {
@@ -284,15 +264,16 @@ footer {
   border-right: 0.6rem solid black;
   border-bottom: 0.6rem solid black;
   border-left: 0.6rem solid black;
+  z-index: 1;
 }
 footer a {
   font-size: 4vw;
   align-self: end;
-  text-decoration: none;
   font-family: "BioRhyme Expanded", serif;
   background-color: black;
   width: 100%;
   color: white;
+  margin: -0.1em;
 }
 footer a:first-child {
   padding-left: 3rem;
@@ -305,6 +286,7 @@ footer a:first-child {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   border-right: 0.6rem solid black;
+  margin-top: 1rem;
 }
 
 .select, .archives, .resources {
@@ -313,7 +295,7 @@ footer a:first-child {
 }
 
 .design-name, .designer-name, .design-archives > nav > ul > li > a, .zen-resources > ul > li > a {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .design-selection {
@@ -333,6 +315,229 @@ footer a:first-child {
   transform: scale(3, 1);
 }
 
+@media only screen and (max-width: 1000px) {
+  header {
+    background-size: 15% 90%;
+    border-top: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+  }
+  .summary {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-size: 32% 70%, 10vw 10vw;
+    padding: 0.5em;
+  }
+  .summary p {
+    text-align: justify;
+  }
+  .summary p:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .summary p:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .preamble {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: column;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+    padding: 0.5em;
+  }
+  .preamble p:nth-child(3)::after {
+    display: none;
+  }
+  .explanation {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/rename.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 62% 40%;
+    background-position-y: 3.75em;
+    padding: 0.5em;
+    border-top: 0.6rem solid black;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+  }
+  .explanation p:nth-child(2) {
+    padding-left: 0.5rem;
+    text-align: justify;
+    font-size: 0.5rem;
+  }
+  .explanation p:nth-child(2)::before {
+    content: url(./images/lightning.svg);
+    display: block;
+    float: right;
+    width: 1.5vw;
+    height: 5vw;
+    padding-left: 1.2vw;
+    margin-right: 0.5rem;
+  }
+  .explanation p:nth-child(3) > abbr {
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-shadow: 0.12vw 0.12vw grey;
+    padding: 0;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    float: left;
+    background-color: rgb(58, 54, 54);
+    color: white;
+    margin-left: 0.5rem;
+  }
+  .participation {
+    grid-column: 1/2;
+    grid-row: 8/9;
+    display: block;
+    margin: 0;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+    padding: 0.5em;
+  }
+  .participation h3 {
+    font-size: 7.4vw;
+    text-align: center;
+  }
+  .participation p {
+    text-align: justify;
+  }
+  .benefits {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    display: block;
+    padding: 0.5em;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+  }
+  .benefits h3 {
+    font-size: 3vw;
+    float: left;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  .benefits p {
+    text-align: justify;
+  }
+  .requirements {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 100%;
+    column-count: 2;
+    grid-auto-flow: column;
+    display: block;
+    margin: 0;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+    padding: 0.5em;
+  }
+  .requirements h3 {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    float: left;
+    font-size: 4vw;
+    font-weight: bolder;
+  }
+  .requirements p {
+    text-align: justify;
+  }
+  footer {
+    grid-column: 1/2;
+    grid-row: 10/11;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    border-right: 0.6rem solid black;
+    border-bottom: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+    z-index: 1;
+  }
+  footer a {
+    font-size: 4vw;
+    align-self: end;
+    font-family: "BioRhyme Expanded", serif;
+    background-color: black;
+    width: 100%;
+    color: white;
+  }
+  footer a:first-child {
+    padding-left: 3rem;
+  }
+  .wrapper {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    display: block;
+    grid-auto-flow: column;
+    column-count: 2;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+  }
+  .select, .archives, .resources {
+    font-size: 3vw;
+    margin: 0;
+  }
+  .design-name, .designer-name, .design-archives > nav > ul > li > a, .zen-resources > ul > li > a {
+    font-size: 1.5vw;
+  }
+  .design-selection {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .sidebar::after {
+    content: "ZEN GARDEN";
+    grid-column: 1/2;
+    grid-row: 9/10;
+    writing-mode: vertical-rl;
+    font-family: "Fredericka the Great", cursive;
+    font-size: 3.5vw;
+    color: #272635;
+    justify-self: right;
+    margin-right: 1em;
+    transform: scale(3, 1);
+  }
+}
+.page-wrapper {
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr) 7vw;
+}
+
+.intro, .main, .sidebar {
+  grid-column: 1/span all;
+  grid-row: 1/span all;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr) 7vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr) 5vw;
+  }
+  .intro, .main, .sidebar {
+    grid-column: 1/2;
+    grid-row: 1/span all;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr) 5vw;
+  }
+}
 * {
   box-sizing: border-box;
 }
