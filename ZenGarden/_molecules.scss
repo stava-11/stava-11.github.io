@@ -352,7 +352,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     background-image: url(./images/fifthAveFinal.jpg);
-    background-size: 48% 90%;
+    background-size: 48% 70%;
     padding: .5em;
   
     p {
@@ -362,13 +362,14 @@ footer {
     p:nth-child(1) {
       grid-column: 2/3;
       grid-row: 1/2;
-      font-size: 2vw;
+      font-size: 1.5vw;
+      margin: 0;
     }
     
     p:nth-child(2) {
       grid-column: 2/3;
       grid-row: 2/3;
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
   }
   
@@ -417,37 +418,31 @@ footer {
   .explanation {
     grid-column: 1/2;
     grid-row: 3/5;
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: repeat(6, 1fr);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) auto;
+    padding: .5em;
+    
     background-image: url(./images/rename.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 40%;
     background-position-y: 5.75em;
-    padding: .5em;
-    
     border-top: $content-border-style;
     border-right: $content-border-style;
     border-left: $content-border-style;
   
-    //h3 {
-      // grid-column: 1/2;
-      // grid-row: 1/2;
-    //}
+    h3 {
+      grid-column: 1/2;
+      grid-row: 1/6;
+    }
     
     p:nth-child(2) {
-      // grid-column: 1/2;
-      // grid-row: 5/6;
-      // margin-top: 21em;
-      // @media only screen and (max-width: 400px) {
-      //   margin-top: 23em;
-      // }
+      grid-column: 1/2;
+      grid-row: 6/7;
       padding-left: .5rem;
       text-align: justify;
-      font-size: medium;
+      font-size: 0.9vw;
     }
     
     p:nth-child(2)::before {
@@ -461,9 +456,11 @@ footer {
     }
     
     p:nth-child(3) {
-      // grid-column: 1/2;
-      // grid-row: 6/7;
-      font-size: medium;
+      grid-column: 1/2;
+      grid-row: 7/8;
+      padding-right: 0.5rem;
+      text-align: justify;
+      font-size: 0.9vw;
     }
     
     p:nth-child(3) > abbr {
