@@ -532,11 +532,12 @@ footer a:first-child {
   .wrapper {
     grid-column: 1/2;
     grid-row: 9/10;
-    display: block;
-    grid-auto-flow: column;
-    column-count: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
     border-right: 0.6rem solid black;
     border-left: 0.6rem solid black;
+    padding: 1em;
   }
   .select, .archives, .resources {
     font-size: 3vw;

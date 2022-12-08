@@ -579,11 +579,12 @@ footer {
   .wrapper {
     grid-column: 1/2;
     grid-row: 9/10;
-    display: block;
-    grid-auto-flow: column;
-    column-count: 2;  
+    display: flex;
+    flex-direction: column;
+    margin-top: 0; 
     border-right: $content-border-style;
     border-left: $content-border-style;
+    padding: 1em;
   }
   
   .select, .archives, .resources {
