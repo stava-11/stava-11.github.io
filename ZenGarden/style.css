@@ -78,7 +78,7 @@ header h2 {
   background-image: url(./images/fifthAveFinal.jpg), url(./images/cat-fiddle-vintage-postcard-small.jpg);
   background-position: left, right;
   background-repeat: no-repeat, no-repeat;
-  background-size: 32% 70%, 10vw 10vw;
+  background-size: 27vw 9vw, 9vw 9vw;
 }
 .summary p {
   align-self: center;
@@ -124,6 +124,20 @@ header h2 {
   color: black;
   font-size: 5.7em;
   letter-spacing: 0.3em;
+  animation-name: fade;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .preamble p:nth-child(4) {
   grid-column: 5/7;
