@@ -319,21 +319,22 @@ footer {
 @media only screen and (max-width: $small-view-size) {
 
   header {
-    background-size: 15% 90%;
-    border-top: $header-border-style;
-    border-bottom: $header-border-style;
     grid-column: 1/span all;
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: min-content;
+    grid-template-rows: auto;
+    border-top: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
     background-image: url(./images/clown-1295055.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: initial;
+    background-size: 15% 90%;
     
     h1 {
       grid-column: 2/7;
-      margin: 0
+      margin: 0;
+      align-self: flex-end;
   }
     h2 {
       font-size: 3vw;
