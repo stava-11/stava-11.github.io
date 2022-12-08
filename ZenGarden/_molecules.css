@@ -335,6 +335,19 @@ footer a:first-child {
     background-size: 15% 90%;
     border-top: 0.3rem solid black;
     border-bottom: 0.3rem solid black;
+    grid-column: 1/span all;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    background-image: url(./images/clown-1295055.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header h2 {
+    font-size: 3vw;
+    grid-row: 2/2;
+    margin: auto;
   }
   .summary {
     grid-column: 1/2;
@@ -342,7 +355,8 @@ footer a:first-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    background-size: 32% 70%, 10vw 10vw;
+    background-image: url(./images/fifthAveFinal.jpg);
+    background-size: 48% 90%;
     padding: 0.5em;
   }
   .summary p {
@@ -351,10 +365,12 @@ footer a:first-child {
   .summary p:nth-child(1) {
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: 2vw;
   }
   .summary p:nth-child(2) {
     grid-column: 2/3;
     grid-row: 2/3;
+    font-size: 2vw;
   }
   .preamble {
     grid-column: 1/2;
@@ -365,8 +381,20 @@ footer a:first-child {
     border-left: 0.6rem solid black;
     padding: 0.5em;
   }
+  .preamble h3 {
+    margin: 1vw;
+  }
+  .preamble p:nth-child(2) {
+    font-size: 1.5vw;
+  }
+  .preamble p:nth-child(3) {
+    font-size: 1.5vw;
+  }
   .preamble p:nth-child(3)::after {
     display: none;
+  }
+  .preamble p:nth-child(4) {
+    font-size: 1.5vw;
   }
   .explanation {
     grid-column: 1/2;
@@ -376,8 +404,8 @@ footer a:first-child {
     background-image: url(./images/rename.gif);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 62% 40%;
-    background-position-y: 3.75em;
+    background-size: 100% 40%;
+    background-position-y: 5.75em;
     padding: 0.5em;
     border-top: 0.6rem solid black;
     border-right: 0.6rem solid black;
@@ -386,7 +414,7 @@ footer a:first-child {
   .explanation p:nth-child(2) {
     padding-left: 0.5rem;
     text-align: justify;
-    font-size: 0.5rem;
+    font-size: medium;
   }
   .explanation p:nth-child(2)::before {
     content: url(./images/lightning.svg);
@@ -396,6 +424,9 @@ footer a:first-child {
     height: 5vw;
     padding-left: 1.2vw;
     margin-right: 0.5rem;
+  }
+  .explanation p:nth-child(3) {
+    font-size: medium;
   }
   .explanation p:nth-child(3) > abbr {
     font-size: 2vw;
@@ -424,6 +455,7 @@ footer a:first-child {
   }
   .participation p {
     text-align: justify;
+    font-size: 1.1vw;
   }
   .benefits {
     grid-column: 1/2;
@@ -435,7 +467,7 @@ footer a:first-child {
   }
   .benefits h3 {
     font-size: 3vw;
-    float: left;
+    float: right;
     grid-column: 1/2;
     grid-row: 1/2;
     writing-mode: vertical-rl;
@@ -443,6 +475,7 @@ footer a:first-child {
   }
   .benefits p {
     text-align: justify;
+    font-size: 2.2vw;
   }
   .requirements {
     grid-column: 1/2;
@@ -460,7 +493,7 @@ footer a:first-child {
     writing-mode: vertical-rl;
     text-transform: uppercase;
     float: left;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: bolder;
   }
   .requirements p {
