@@ -197,7 +197,7 @@ header {
   border-right: $content-border-style;
 
   h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
     float: left;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -219,7 +219,7 @@ header {
   display: block;
   border-left: $content-border-style;
   margin: 0 1rem 0 0;
-  padding: 0;
+  padding: 0 0 0 1rem;
 
   h3 {
     writing-mode: vertical-rl;
@@ -270,6 +270,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   border-right: $content-border-style;
+  margin-top: 1rem;
 }
 
 .select, .archives, .resources {
