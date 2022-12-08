@@ -139,7 +139,7 @@ header h2 {
   background-image: url(./images/rename.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 62% 48%;
+  background-size: 62% 52%;
   border-top: 0.6rem solid black;
   border-right: 0.6rem solid black;
   border-left: 0.6rem solid black;
@@ -170,6 +170,7 @@ header h2 {
   grid-row: 2/span all;
   padding-left: 0.5rem;
   text-align: justify;
+  font-size: 0.9vw;
 }
 .explanation p:nth-child(2)::before {
   content: url(./images/lightning.svg);
