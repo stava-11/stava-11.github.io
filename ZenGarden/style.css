@@ -220,7 +220,7 @@ header h2 {
   border-right: 0.6rem solid black;
 }
 .benefits h3 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   float: left;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -239,7 +239,7 @@ header h2 {
   display: block;
   border-left: 0.6rem solid black;
   margin: 0 1rem 0 0;
-  padding: 0;
+  padding: 0 0 0 1rem;
 }
 .requirements h3 {
   writing-mode: vertical-rl;
@@ -285,6 +285,7 @@ footer a:first-child {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   border-right: 0.6rem solid black;
+  margin-top: 1rem;
 }
 
 .select, .archives, .resources {
@@ -511,7 +512,7 @@ footer a:first-child {
   margin: 1.5em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 1fr) 7vw;
+  grid-template-rows: repeat(14, 1fr) 7vw;
 }
 
 .intro, .main, .sidebar {
@@ -519,7 +520,7 @@ footer a:first-child {
   grid-row: 1/span all;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 1fr) 7vw;
+  grid-template-rows: repeat(14, 1fr) 7vw;
 }
 
 @media only screen and (max-width: 1000px) {

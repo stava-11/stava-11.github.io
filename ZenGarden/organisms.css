@@ -40,7 +40,7 @@ li {
   margin: 1.5em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 1fr) 7vw;
+  grid-template-rows: repeat(14, 1fr) 7vw;
 }
 
 .intro, .main, .sidebar {
@@ -48,21 +48,21 @@ li {
   grid-row: 1/span all;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 1fr) 7vw;
+  grid-template-rows: repeat(14, 1fr) 7vw;
 }
 
 @media only screen and (max-width: 1000px) {
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(9, 1fr) 5vw;
   }
   .intro, .main, .sidebar {
     grid-column: 1/2;
     grid-row: 1/span all;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(9, 1fr) 5vw;
   }
 }
 
