@@ -10,9 +10,21 @@
     @include atoms.mainGridLargeLayer();
 }
 
-@media only screen and (max-width: $smallViewSize) {
+@media only screen and (max-width: $medium-view-size) {
     
     .page-wrapper {
+        @include atoms.mainGridMedium();
+    }
+        
+    .intro, .main, .sidebar {
+        @include atoms.mainGridMediumLayer();
+    }
+}
+
+@media only screen and (max-width: $small-view-size) {
+    
+    .page-wrapper {
+        margin: 0;
         @include atoms.mainGridSmall();
     }
         
