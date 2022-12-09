@@ -422,12 +422,11 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: .5em;
-    
-    // background-image: url(./images/rename.gif);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: 100% 40%;
-    // background-position-y: 5.75em;
+    background-image: url(./images/rename.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position-y: 5.75em;
     border-top: $content-border-style;
     border-right: $content-border-style;
     border-left: $content-border-style;
