@@ -465,22 +465,15 @@ footer a:first-child {
   .benefits {
     grid-column: 1/2;
     grid-row: 6/7;
-    display: block;
     padding: 0.5em;
-    border-right: 0.6rem solid black;
     border-left: 0.6rem solid black;
   }
   .benefits h3 {
-    font-size: 3vw;
+    font-size: 3.3vw;
     float: right;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
   }
   .benefits p {
-    text-align: justify;
-    font-size: 2.2vw;
+    font-size: 2.3vw;
   }
   .requirements {
     grid-column: 1/2;
@@ -533,7 +526,7 @@ footer a:first-child {
     grid-column: 1/2;
     grid-row: 8/9;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: nowrap;
     margin-top: 0;
     border-right: 0.6rem solid black;
     border-left: 0.6rem solid black;
@@ -547,16 +540,11 @@ footer a:first-child {
     font-size: 1.5vw;
   }
   .sidebar::after {
-    content: "ZEN GARDEN";
+    content: none;
     grid-column: 1/2;
     grid-row: 8/9;
-    writing-mode: vertical-rl;
-    font-family: "Fredericka the Great", cursive;
-    font-size: 3.5vw;
-    color: #272635;
     justify-self: right;
     margin-right: 1.5em;
-    transform: scale(3, 1);
   }
 }
 
