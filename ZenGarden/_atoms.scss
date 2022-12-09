@@ -19,7 +19,7 @@
 @mixin mainGridSmall() {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:  repeat(9, 1fr) 5vw;
+  grid-template-rows: 18vw 22vw 70vw repeat(6, 1fr) 5vw;
 }
 
 @mixin mainGridSmallLayer() {
