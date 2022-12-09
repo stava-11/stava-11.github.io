@@ -599,7 +599,7 @@ footer a:first-child {
     text-align: center;
   }
   .participation p {
-    font-size: 1.2vw;
+    font-size: 2.3vw;
   }
   .benefits {
     grid-column: 1/2;
@@ -624,6 +624,9 @@ footer a:first-child {
   }
   .requirements h3 {
     font-size: 3.5vw;
+  }
+  .requirements p {
+    font-size: 2.3vw;
   }
   footer {
     grid-row: 9/10;
@@ -690,14 +693,14 @@ footer a:first-child {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 18vw 22vw 125vw repeat(4, 1fr) 30vw 5vw;
+    grid-template-rows: 18vw 22vw 125vw 1fr 160vw 60vw 130vw 30vw 5vw;
   }
   .intro, .main, .sidebar {
     grid-column: 1/2;
     grid-row: 1/span all;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 18vw 22vw 125vw repeat(4, 1fr) 30vw 5vw;
+    grid-template-rows: 18vw 22vw 125vw 1fr 160vw 60vw 130vw 30vw 5vw;
   }
 }
 * {
