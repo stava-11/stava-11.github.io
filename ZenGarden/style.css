@@ -520,13 +520,13 @@ footer a:first-child {
   .summary p:nth-child(1) {
     grid-column: 2/3;
     grid-row: 1/2;
-    font-size: 1.5vw;
+    font-size: 2.3vw;
     margin: 0;
   }
   .summary p:nth-child(2) {
     grid-column: 2/3;
     grid-row: 2/3;
-    font-size: 1.5vw;
+    font-size: 2.3vw;
   }
   .preamble {
     grid-column: 1/2;
@@ -543,16 +543,16 @@ footer a:first-child {
     align-self: center;
   }
   .preamble p:nth-child(2) {
-    font-size: 1.6vw;
+    font-size: 2.3vw;
   }
   .preamble p:nth-child(3) {
-    font-size: 1.6vw;
+    font-size: 2.3vw;
   }
   .preamble p:nth-child(3)::after {
     display: none;
   }
   .preamble p:nth-child(4) {
-    font-size: 1.6vw;
+    font-size: 2.3vw;
   }
   .explanation {
     grid-row: 3/4;
@@ -569,7 +569,7 @@ footer a:first-child {
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 0 0.5rem;
-    font-size: 2.2vw;
+    font-size: 2.3vw;
   }
   .explanation p:nth-child(2)::before {
     width: 3vw;
@@ -581,7 +581,7 @@ footer a:first-child {
     grid-column: 1/2;
     grid-row: 3/4;
     padding: 0.5rem;
-    font-size: 2.2vw;
+    font-size: 2.3vw;
   }
   .explanation p:nth-child(3) > abbr {
     font-size: 3vw;
@@ -638,6 +638,15 @@ footer a:first-child {
     border-right: 0.6rem solid black;
     border-left: 0.6rem solid black;
     padding: 1em;
+  }
+  .wrapper ul {
+    padding: 0 0 0 2vw;
+  }
+  .wrapper li {
+    font-size: 1.5vw;
+  }
+  .wrapper a {
+    font-size: 2vw;
   }
   .sidebar::after {
     content: none;
