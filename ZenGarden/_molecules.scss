@@ -252,7 +252,6 @@ footer {
   border-right: $content-border-style;
   border-bottom: $content-border-style;
   border-left: $content-border-style;
-  z-index: 1;
 
   a {
     font-size: 4vw;
@@ -309,25 +308,13 @@ footer {
 
 
 
-
-
-
-
-
-// Small Media Screen
+/*************** Small Media Screen **************/
 
 @media only screen and (max-width: $small-view-size) {
 
   header {
-    grid-column: 1/span all;
-    grid-row: 1/2;
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
-    border-top: 0.3rem solid black;
-    border-bottom: 0.3rem solid black;
-    background-image: url(./images/clown-1295055.svg);
-    background-repeat: no-repeat;
     background-position: initial;
     background-size: 15% 90%;
     
@@ -340,15 +327,13 @@ footer {
       font-size: 3vw;
       grid-column: 2/7;
       grid-row: 2/2;
-      margin: auto; //no margin
+      margin: 0;
     }
   }
 
   
   .summary {
-    grid-column: 1/2;
     grid-row: 2/3;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     background-image: url(./images/fifthAveFinal.jpg);
@@ -406,15 +391,11 @@ footer {
   }
   
   .explanation {
-    grid-column: 1/2;
     grid-row: 3/4;
     grid-template-columns: 1fr;
     grid-template-rows: 66% 17% 17%;
     background-size: 100% 45%;
     background-position-y: 28%;
-    border-top: $content-border-style;
-    border-right: $content-border-style;
-    border-left: $content-border-style;
   
     h3 {
       align-self: start;
@@ -429,9 +410,6 @@ footer {
     }
     
     p:nth-child(2)::before {
-      content: url(./images/lightning.svg);
-      display: block;
-      float: right;
       width: 1.5vw;
       height: 5vw;
       padding-left: 0.5rem;
@@ -454,8 +432,6 @@ footer {
   .participation {
     grid-column: 1/2;
     grid-row: 7/8;
-    display: block;
-    margin: 0;
     border-right: $content-border-style;
     border-left: $content-border-style;
     padding: .5em;
@@ -466,8 +442,7 @@ footer {
     }
     
     p {
-      text-align: justify;
-      font-size: 1.1vw;
+      font-size: 1.2vw;
     }
   }
   
@@ -492,53 +467,17 @@ footer {
     grid-column: 1/2;
     grid-row: 5/6;
     width: 100%;
-    column-count: 2;
-    grid-auto-flow: column;
-    display: block;
     margin: 0;
     border-right: $content-border-style;
-    border-left: $content-border-style;
     padding: .5em;
   
     h3 {
-      writing-mode: vertical-rl;
-      @include atoms.uppercase();
-      float: left;
       font-size: 3.5vw;
-      font-weight: bolder;
-    }
-    
-    p {
-      text-align: justify;
     }
   }
   
   footer {
-    grid-column: 1/2;
     grid-row: 9/10;
-    display: flex;
-    text-align: center;
-    justify-content:space-between;
-    height: 100%;
-    width: 100%;
-    padding-top: 1rem;
-    border-right: $content-border-style;
-    border-bottom: $content-border-style;
-    border-left: $content-border-style;
-    z-index: 1;
-  
-    a {
-      font-size: 4vw;
-      align-self: end;
-      font-family: $fonts-h2;
-      background-color: black;
-      width: 100%;
-      color: white;
-    }
-    
-    a:first-child {
-      padding-left: 3rem;
-    }
   }
   
   .wrapper {
@@ -546,19 +485,11 @@ footer {
     grid-row: 8/9;
     display: flex;
     flex-flow: nowrap;
+    justify-content: space-around;
     margin-top: 0; 
     border-right: $content-border-style;
     border-left: $content-border-style;
     padding: 1em;
-  }
-  
-  .select, .archives, .resources {
-    font-size: 3vw;
-    margin: 0;
-  }
-  
-  .design-name, .designer-name, .design-archives > nav > ul > li > a, .zen-resources > ul > li > a {
-    font-size: 1.5vw;
   }
   
   .sidebar::after {
