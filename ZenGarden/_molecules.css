@@ -406,13 +406,8 @@ footer a:first-child {
   .explanation {
     grid-column: 1/2;
     grid-row: 3/4;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 66% 17% 17%;
-    padding: 0.5em;
-    background-image: url(./images/rename.gif);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: 100% 45%;
     background-position-y: 28%;
     border-top: 0.6rem solid black;
@@ -420,15 +415,12 @@ footer a:first-child {
     border-left: 0.6rem solid black;
   }
   .explanation h3 {
-    grid-column: 1/2;
-    grid-row: 1/2;
     align-self: start;
   }
   .explanation p:nth-child(2) {
     grid-column: 1/2;
     grid-row: 2/3;
-    padding-left: 0.5rem;
-    text-align: justify;
+    padding: 0 0.5rem;
     font-size: 1.3vw;
   }
   .explanation p:nth-child(2)::before {
@@ -443,22 +435,12 @@ footer a:first-child {
   .explanation p:nth-child(3) {
     grid-column: 1/2;
     grid-row: 3/4;
-    padding-right: 0.5rem;
-    text-align: justify;
+    padding: 0.5rem;
     font-size: 1.3vw;
-    margin: 1rem 0.5rem;
   }
   .explanation p:nth-child(3) > abbr {
     font-size: 2vw;
-    text-transform: uppercase;
     text-shadow: 0.12vw 0.12vw grey;
-    padding: 0;
-    text-decoration: none;
-    writing-mode: vertical-rl;
-    float: left;
-    background-color: rgb(58, 54, 54);
-    color: white;
-    margin-left: 0.5rem;
   }
   .participation {
     grid-column: 1/2;
