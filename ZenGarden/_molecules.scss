@@ -437,15 +437,6 @@ footer {
       grid-row: 1/2;
       align-self: start;
     }
-
-    h3::after {
-      content: url(./images/rename.gif);
-      grid-row: 2/3;
-      display: block;
-      float: right;
-      width: 100%;
-      height: auto;
-    }
     
     p:nth-child(2) {
       grid-column: 1/2;
