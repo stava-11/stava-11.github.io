@@ -31,7 +31,7 @@
 @mixin mainGridSmall() {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 18vw 22vw 125vw 1fr 164vw 43vw 105vw 30vw 5vw;
+  grid-template-rows: 18vw 22vw 125vw 1fr 164vw 41vw 105vw 30vw 5vw;
 }
 
 @mixin mainGridSmallLayer() {

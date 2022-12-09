@@ -621,6 +621,7 @@ footer a:first-child {
     margin: 0;
     border-right: 0.6rem solid black;
     padding: 0.5em;
+    column-count: 1;
   }
   .requirements h3 {
     font-size: 3.5vw;
