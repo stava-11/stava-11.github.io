@@ -385,16 +385,16 @@ footer a:first-child {
     align-self: center;
   }
   .preamble p:nth-child(2) {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
   }
   .preamble p:nth-child(3) {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
   }
   .preamble p:nth-child(3)::after {
     display: none;
   }
   .preamble p:nth-child(4) {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
   }
   .explanation {
     grid-row: 3/4;
