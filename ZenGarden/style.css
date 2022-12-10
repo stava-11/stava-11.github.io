@@ -694,14 +694,14 @@ footer a:first-child {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 18vw 22vw 125vw 1fr 162vw 39vw 103vw 32vw 5vw;
+    grid-template-rows: 18vw 22vw 125vw 1fr 161vw 38vw 102vw 35vw 5vw;
   }
   .intro, .main, .sidebar {
     grid-column: 1/2;
     grid-row: 1/span all;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 18vw 22vw 125vw 1fr 162vw 39vw 103vw 32vw 5vw;
+    grid-template-rows: 18vw 22vw 125vw 1fr 161vw 38vw 102vw 35vw 5vw;
   }
 }
 * {
