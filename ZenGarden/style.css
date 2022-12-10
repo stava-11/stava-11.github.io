@@ -632,6 +632,9 @@ footer a:first-child {
   footer {
     grid-row: 9/10;
   }
+  footer a:first-child {
+    padding-left: 2.5vw;
+  }
   .wrapper {
     grid-column: 1/2;
     grid-row: 8/9;

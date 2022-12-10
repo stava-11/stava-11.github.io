@@ -680,6 +680,10 @@ footer {
   
   footer {
     grid-row: 9/10;
+
+    a:first-child {
+      padding-left: 2.5vw;
+  }
   }
   
   .wrapper {
