@@ -705,9 +705,9 @@ footer {
       font-size: 1.5vw;
     }
 
-    a{
+    .design-name, .designer-name, .design-archives > nav > ul > li > a, .zen-resources > ul > li > a {
       font-size: 2vw;
-    }
+  }
   }
   
   .sidebar::after {

@@ -652,7 +652,7 @@ footer a:first-child {
   .wrapper li {
     font-size: 1.5vw;
   }
-  .wrapper a {
+  .wrapper .design-name, .wrapper .designer-name, .wrapper .design-archives > nav > ul > li > a, .wrapper .zen-resources > ul > li > a {
     font-size: 2vw;
   }
   .sidebar::after {
